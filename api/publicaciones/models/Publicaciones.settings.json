@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "publicaciones",
+  "info": {
+    "name": "publicaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "autor": {
+      "type": "string",
+      "required": true
+    },
+    "idioma": {
+      "enum": [
+        "Espanol",
+        "Ingles"
+      ],
+      "type": "enumeration",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "cuerpo": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

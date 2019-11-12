@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "proyectos",
+  "info": {
+    "name": "proyecto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "portada": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "cuerpo": {
+      "type": "richtext"
+    }
+  }
+}
